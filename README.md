@@ -1,4 +1,4 @@
 # Window_Dev_Scripts
 Windows Scripts development github
 
-The devlopment repo
+The devlopment repo, for my scripts.
