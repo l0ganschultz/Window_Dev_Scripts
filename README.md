@@ -13,7 +13,7 @@ _DNS, Firewalls, Audit Policy, GPO, Registry, and Web Servers._
 
 **Golden ticket** | A script to stop Golden Ticket Attacks.
 
-_This dose it by reseting the password a couple of tiemes ever 5 minutes._
+_This dose it by reseting the password a couple of times ever 5 minutes._
 
 **Start Scripts** | Scripts to run at the start of a comp.
 
