@@ -170,10 +170,10 @@ Copy-Item "C:\inetpub\*" $backupPathWEB -Recurse -Force
 #--------------------------------------------------------------
 
 # Change to Sysmon config directory
-Set-Location "C:\Github\RnDSweats-Development\Windows Branch\COMP\Tools\Sysmon\Configration Files"
+#Set-Location "C:\Github\RnDSweats-Development\Windows Branch\COMP\Tools\Sysmon\Configration Files"
 
 # Install Sysmon with config
-sysmon -accepteula -i C:\Github\RnDSweats-Development\Windows Branch\COMP\Tools\Sysmon\Configration Files\config.xml
+#sysmon -accepteula -i C:\Github\RnDSweats-Development\Windows Branch\COMP\Tools\Sysmon\Configration Files\config.xml
 
 #--------------------------------------------------------------
 #Fix vulnerabilities
@@ -198,4 +198,5 @@ Update-SmbMultichannelConnection
 
 #--------------------------------------------------------------
 #End of Script
+
 #--------------------------------------------------------------
