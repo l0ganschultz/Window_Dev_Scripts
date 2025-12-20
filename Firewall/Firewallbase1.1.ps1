@@ -87,7 +87,7 @@ New-NetFirewallRule -DisplayName "VELOCIRAPTOR Outbound Port 8001" -Direction Ou
 #--------------------------------------------------------------
 # RDP Whitelist | 1.0
 #--------------------------------------------------------------
-New-NetFirewallRule -DisplayName "Allow RDP" -Direction Inbound -Protocol TCP -LocalPort 3389 -RemoteAddress 192.168.1.100 -Action Allow
+#New-NetFirewallRule -DisplayName "Allow RDP" -Direction Inbound -Protocol TCP -LocalPort 3389 -RemoteAddress 192.168.1.100 -Action Allow
 
 #--------------------------------------------------------------
 # Palo Alto Mgmt | 1.0
@@ -102,5 +102,6 @@ New-NetFirewallRule -DisplayName "Cisco Fire Power Inbound Port 443" -Direction 
 New-NetFirewallRule -DisplayName "Cisco Fire Power Outbound Port 443" -Direction Outbound -LocalPort 443 -Protocol TCP  -Action Allow
 
 New-NetFirewallRule -DisplayName "Cisco Fire Power Inbound Port 80" -Direction Inbound -LocalPort 80 -Protocol TCP  -Action Allow
+
 
 New-NetFirewallRule -DisplayName "Cisco Fire Power Outbound Port 80" -Direction Outbound -LocalPort 80 -Protocol TCP  -Action Allow
