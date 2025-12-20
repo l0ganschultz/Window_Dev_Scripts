@@ -197,7 +197,7 @@ New-NetFirewallRule -DisplayName "VELOCIRAPTOR Outbound Port 8001" -Direction Ou
 #--------------------------------------------------------------
 # RDP Whitelist | 1.0
 #--------------------------------------------------------------
-New-NetFirewallRule -DisplayName "Allow RDP" -Direction Inbound -Protocol TCP -LocalPort 3389 -RemoteAddress 192.168.1.100 -Action Allow
+#New-NetFirewallRule -DisplayName "Allow RDP" -Direction Inbound -Protocol TCP -LocalPort 3389 -RemoteAddress 192.168.1.100 -Action Allow
 
 #--------------------------------------------------------------
 # Palo Alto Mgmt | 1.0
@@ -231,4 +231,5 @@ New-NetFirewallRule -DisplayName "SQL Sec Inbound Port 3306" -Direction Inbound 
 
 #OutBound
 New-NetFirewallRule -DisplayName "SQL Sec Outbound Port 3306" -Direction Outbound -LocalPort 3300 -Protocol TCP -Action Block
+
 
