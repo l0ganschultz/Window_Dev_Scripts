@@ -213,4 +213,22 @@ New-NetFirewallRule -DisplayName "Cisco Fire Power Outbound Port 443" -Direction
 
 New-NetFirewallRule -DisplayName "Cisco Fire Power Inbound Port 80" -Direction Inbound -LocalPort 80 -Protocol TCP  -Action Allow
 
+
 New-NetFirewallRule -DisplayName "Cisco Fire Power Outbound Port 80" -Direction Outbound -LocalPort 80 -Protocol TCP  -Action Allow
+
+#--------------------------------------------------------------
+# SQL | 1.0
+#--------------------------------------------------------------
+
+#Inbound
+New-NetFirewallRule -DisplayName "SQL Inbound Port 3306" -Direction Inbound -LocalPort 3306 -Protocol TCP  -Action Allow
+
+#OutBound
+New-NetFirewallRule -DisplayName "SQL Outbound Port 3306" -Direction Outbound -LocalPort 3306 -Protocol TCP -Action Block
+
+#Inbound
+New-NetFirewallRule -DisplayName "SQL Sec Inbound Port 3306" -Direction Inbound -LocalPort 3300 -Protocol TCP  -Action Allow
+
+#OutBound
+New-NetFirewallRule -DisplayName "SQL Sec Outbound Port 3306" -Direction Outbound -LocalPort 3300 -Protocol TCP -Action Block
+
