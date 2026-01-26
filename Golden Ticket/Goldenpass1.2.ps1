@@ -52,10 +52,10 @@ Show-LastPasswordReset
 #--------------------------------------------------------------
 Reset-KrbtgtPassword
 Reset-KrbtgtPassword
-Reset-KrbtgtPassword
 
 Write-Output "Password Reset Process Completed."
 
 # Get Password last reset time
 #--------------------------------------------------------------
 Get-ADUser "Krbtgt" -Property PasswordLastSet
+
