@@ -652,8 +652,8 @@ function Show-Menu {
     Write-Host "4. Start Backups"
     Write-Host "5. Create Firewall"
     Write-Host "6. Create backup account"
-    Write-Host "7. Open tools"
-    Write-Host "8. Hardening"
+    Write-Host "7. Hardening"
+    Write-Host "8. Open tools"
     Write-Host "9. Exit"
 }
 
@@ -701,4 +701,5 @@ Read-Host "Press Enter to exit..."
 
 #--------------------------------------------------------------
 #End of Script
+
 #--------------------------------------------------------------
