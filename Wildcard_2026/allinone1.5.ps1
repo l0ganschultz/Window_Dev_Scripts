@@ -34,8 +34,8 @@ function Download-Github {
     Write-Host "|       Downloading Github             |"
     Write-Host "========================================"
 # GitHub
-$urlGitHub = "https://github.com/SOC-SE/RnDSweats/archive/refs/heads/temp.zip"
-$downloadPathGitHub = "C:\Users\$env:USERNAME\Downloads\temp.zip"
+$urlGitHub = "https://codeload.github.com/SOC-SE/RnDSweats/zip/refs/heads/temp"
+$downloadPathGitHub = "C:\Users\$env:USERNAME\Downloads\RnDSweats-temp.zip"
 $extractPathGitHub = "C:\Github"
 
 # Create extract folder | GitHub
@@ -694,4 +694,5 @@ Read-Host "Press Enter to exit..."
 #End of Script
 
 #--------------------------------------------------------------
+
 
