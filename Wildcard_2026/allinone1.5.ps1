@@ -3,7 +3,7 @@
 # Made by Logan Schultz
 #Version | 1.5
 #--------------------------------------------------------------
-
+$ProgressPreference = 'SilentlyContinue'
 #--------------------------------------------------------------
 # Enumeration
 #-------------------------------------------------------------- 
@@ -338,15 +338,6 @@ function Invoke-Hardening {
     bcdedit.exe /set "{current}" nx AlwaysOn 2>$null
     reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 0 /f 2>$null
     reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "DisableHHDEP" /t REG_DWORD /d 0 /f 2>$null
-
-    #----------------------------------------------------------
-    # UAC Hardening
-    #----------------------------------------------------------
-    Write-Host "Hardening UAC..."
-    reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v EnableLUA /t REG_DWORD /d 1 /f 2>$null
-    reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v ConsentPromptBehaviorAdmin /t REG_DWORD /d 1 /f 2>$null
-    reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v ConsentPromptBehaviorUser /t REG_DWORD /d 0 /f 2>$null
-    reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v FilterAdministratorToken /t REG_DWORD /d 1 /f 2>$null
 
     #----------------------------------------------------------
     # Disable autorun
@@ -703,3 +694,4 @@ Read-Host "Press Enter to exit..."
 #End of Script
 
 #--------------------------------------------------------------
+
