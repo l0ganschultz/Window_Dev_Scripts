@@ -1,7 +1,7 @@
 ﻿#--------------------------------------------------------------
 # All in one | Script for start of comp
 # Made by Logan Schultz
-#Version | 1.5
+#Version | 1.7
 #--------------------------------------------------------------
 $ProgressPreference = 'SilentlyContinue'
 #--------------------------------------------------------------
@@ -34,7 +34,7 @@ function Download-Github {
     Write-Host "|       Downloading Github             |"
     Write-Host "========================================"
 # GitHub
-$urlGitHub = "https://codeload.github.com/SOC-SE/RnDSweats/zip/refs/heads/temp"
+$urlGitHub = "https://github.com/SOC-SE/RnDSweats/archive/refs/heads/temp.zip"
 $downloadPathGitHub = "C:\Users\$env:USERNAME\Downloads\RnDSweats-temp.zip"
 $extractPathGitHub = "C:\Github"
 
@@ -694,6 +694,7 @@ Read-Host "Press Enter to exit..."
 #End of Script
 
 #--------------------------------------------------------------
+
 
 
 
