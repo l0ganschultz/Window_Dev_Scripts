@@ -2526,7 +2526,7 @@ function Show-Menu {
 # Main script loop
 #-------------------------------------------------------------
 $choice = ""
-while ($choice -ne "12") {
+while ($choice -ne "13") {
     Show-Menu
     $choice = Read-Host "Enter your choice"
     switch ($choice) {
@@ -2563,11 +2563,11 @@ while ($choice -ne "12") {
         "11" {
             Invoke-Hardening
         }
-        "13" {
+        "12" {
             Open-tools
         
         }
-        "12" {
+        "13" {
             Write-Host "Exiting script..."
         
         default {
@@ -2580,4 +2580,5 @@ Read-Host "Press Enter to exit..."
 
 #--------------------------------------------------------------
 #End of Script
+
 #--------------------------------------------------------------
