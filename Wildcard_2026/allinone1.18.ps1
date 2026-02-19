@@ -2516,11 +2516,12 @@ function Show-Menu {
     Write-Host "5. Install Splunk"
     Write-Host "6. Install Salt"
     Write-Host "7. Install Wazuh"
-    Write-Host "8. Invoke Firewall"
-    Write-Host "9. Create Backdoor"
-    Write-Host "10.Invoke Hardening"
-    Write-Host "11.Open Tools"
-    Write-Host "12.Exit"
+    Write-Host "8. Invoke sysmon"
+    Write-Host "9. Firewall"
+    Write-Host "10.Create backdoor"
+    Write-Host "11.Incoke Harding "
+    Write-Host "12.Open Tools"
+    Write-Host "13.Exit"
 }
 
 # Main script loop
@@ -2582,4 +2583,5 @@ Read-Host "Press Enter to exit..."
 #End of Script
 
 #--------------------------------------------------------------
+
 
