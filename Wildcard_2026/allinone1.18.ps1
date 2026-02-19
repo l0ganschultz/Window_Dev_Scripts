@@ -169,7 +169,7 @@ Get-LocalUser | ForEach-Object {
 Write-Host "-----------------------------------------" -ForegroundColor Green
 Write-Host "|      System Enumeration Complete      |" -ForegroundColor Green
 Write-Host "-----------------------------------------" -ForegroundColor Green
-}
+
 
 #--------------------------------------------------------------
 # Github Download
@@ -2582,3 +2582,4 @@ Read-Host "Press Enter to exit..."
 #End of Script
 
 #--------------------------------------------------------------
+
